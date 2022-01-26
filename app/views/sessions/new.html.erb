@@ -1,0 +1,73 @@
+<div>
+<h1>Lender</h1>
+<form action='/lenders' method="post">
+	<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+	<p>
+		<label for ="first_name">First Name:</label>
+		<input type="text" id="first_name" name="lender[first_name]">
+	</p>
+	<p>
+		<label for ="last_name">Last Name:</label>
+		<input type="text" id="last_name" name="lender[last_name]">
+	</p>
+	<p>
+		<label for ="state">Money:</label>
+		<input type="number" id="money" name="lender[money]">
+	</p>
+	<p>
+		<label for ="email">Email:</label>
+		<input type="text" id="email" name="lender[email]">
+	</p>	
+	<p>
+		<label for ="password">Password</label>
+		<input type="text" id="password" name="lender[password]">
+	</p>
+	<p>
+		<label for ="password_confirmation">Password Confirmation</label>
+		<input type="text" id="password_confirmation" name="lender[password_confirmation]">
+	</p>
+	<input type="submit" value="Register">
+</form>
+<a href="/sessions/login"> Already a member? </a>
+</div>
+
+<h1>Borrower </h1>
+
+<form action='/borrowers' method="post">
+	<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+	<p>
+		<label for ="first_name">First Name:</label>
+		<input type="text" id="first_name" name="borrower[first_name]">
+	</p>
+	<p>
+		<label for ="last_name">Last Name:</label>
+		<input type="text" id="last_name" name="borrower[last_name]">
+	</p>
+
+	<p>
+		<label for ="purpose">Need money for:</label>
+		<input type="text" id="purpose" name="borrower[purpose]">
+	</p>
+	<p>
+		<label for ="description">Description:</label>
+		<input type="text" id="description" name="borrower[description]">
+	</p>
+	<p>
+		<label for ="money">Amount needed:</label>
+		<input type="number" id="money" name="borrower[money]">
+	</p>
+	<p>
+		<label for ="email">Email:</label>
+		<input type="text" id="email" name="borrower[email]">
+	</p>	
+	<p>
+		<label for ="password">Password</label>
+		<input type="password" id="password" name="borrower[password]">
+	</p>
+	<p>
+		<label for ="password_confirmation">Password Confirmation</label>
+		<input type="password" id="password_confirmation" name="borrower[password_confirmation]">
+	</p>
+	<input type="submit" value="Register">
+</form>
+<a href="/sessions/login"> Ya es miembro? </a>
