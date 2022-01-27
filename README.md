@@ -21,4 +21,4 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* Se ha eliminado algunos componentes de la carpeta node_modules, para correr la App reinstalar los componentes de esta carpeta
+* Se ha eliminado algunos componentes de la carpeta node_modules, para correr la App reinstalar los componentes de esta carpeta - Se reinstaló, funciona y se subió a Github
